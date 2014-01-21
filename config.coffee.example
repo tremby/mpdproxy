@@ -1,0 +1,19 @@
+module.exports =
+	# Host this proxy should run on
+	proxyPort: 6600
+
+	# Host real MPD is running on
+	host: 'localhost'
+
+	# Port real MPD is running on
+	port: 6601
+
+	# MPD password
+	password: 'secret'
+
+	# IP ranges for which the password should automatically be given
+	passwordlessRanges: [
+		'127.0.0.0/8'
+		'10.0.0.0/8'
+		'1.2.3.4'
+	]

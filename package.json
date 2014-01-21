@@ -1,0 +1,18 @@
+{
+  "name": "mpdproxy",
+  "author": "Bart Nagel <bart@tremby.net>",
+  "version": "0.1.0",
+  "description": "MPD proxy automatically entering password for clients in certain IP ranges",
+  "main": "mpdproxy.coffee",
+  "scripts": {
+    "prestart": "coffee -c daemon.coffee mpdproxy.coffee config.coffee",
+    "start": "node daemon.js start",
+    "prestop": "coffee -c daemon.coffee mpdproxy.coffee config.coffee",
+    "stop": "node daemon.js stop"
+  },
+  "dependencies": {
+    "netmask": "~0.0.2",
+    "coffee-script": "~1.6.1",
+    "start-stop-daemon": "~0.1.0"
+  }
+}
