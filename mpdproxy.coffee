@@ -98,7 +98,7 @@ start = ->
 	server.on 'error', (error) ->
 		console.log 'server error: ', error
 
-	server.listen config.proxyPort
+	server.listen config.proxyPort, '0.0.0.0'
 
 # Start or expose application
 # ---------------------------
