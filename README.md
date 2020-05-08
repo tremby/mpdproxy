@@ -45,6 +45,11 @@ One way to do this is to put a line like this in your `/etc/rc.local`:
 
 	su - youruser -c 'cd /path/to/mpdproxy && npm start'
 
+Running directly
+----------------
+
+`mpdproxy.coffee` now features a [hashbang](https://en.wikipedia.org/wiki/Shebang_(Unix)) which allows shells to know the script is to be executed with `coffee`. This allows a symlink to be made to `mpdproxy.coffee` from the `/usr/bin` directory.
+
 Author
 ------
 

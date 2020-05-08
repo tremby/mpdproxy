@@ -1,3 +1,5 @@
+#!/usr/bin/coffee
+
 net = require 'net'
 netmask = require 'netmask'
 
