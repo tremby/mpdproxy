@@ -48,7 +48,7 @@ One way to do this is to put a line like this in your `/etc/rc.local`:
 Running directly
 ----------------
 
-`mpdproxy.coffee` now features a [hashbang](https://en.wikipedia.org/wiki/Shebang_(Unix)) which allows shells to know the script is to be executed with `coffee`. This allows a symlink to be made to `mpdproxy.coffee` from the `/usr/bin` directory.
+`mpdproxy.coffee` has a [hashbang](https://en.wikipedia.org/wiki/Shebang_(Unix)) which allows shells to know the script is to be executed with `coffee`. This allows a symlink to be made to `mpdproxy.coffee` from any directory in your `PATH`, such as your `$HOME/bin` or `/usr/local/bin` directory.
 
 Author
 ------
