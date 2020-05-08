@@ -1,4 +1,4 @@
-#!/usr/bin/coffee
+#!/usr/bin/env coffee
 
 net = require 'net'
 netmask = require 'netmask'
